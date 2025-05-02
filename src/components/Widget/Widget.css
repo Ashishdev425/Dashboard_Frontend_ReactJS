@@ -1,0 +1,191 @@
+/* Main widget container */
+.widget {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+/* Widget header styles */
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #f3f4f6;
+  background-color: white;
+}
+
+.widget-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+}
+
+.remove-widget-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.remove-widget-button:hover {
+  background-color: #f9fafb;
+  color: #ef4444;
+}
+
+/* Widget content area */
+.widget-content {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+/* Text widget */
+.text-widget {
+  padding: 16px;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.5;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Empty widget */
+.empty-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 24px;
+  text-align: center;
+}
+
+.empty-widget-icon {
+  color: #d1d5db;
+  margin-bottom: 16px;
+}
+
+.empty-widget-message {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Donut chart widget */
+.donut-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  height: 100%;
+}
+
+.chart-content {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.chart-number {
+  font-size: 36px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.chart-label {
+  font-size: 14px;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+/* Legend styles (used by both donut and progress) */
+.chart-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Legend colors */
+.legend-dot.blue { background-color: #4F46E5; }
+.legend-dot.gray { background-color: #E5E7EB; }
+.legend-dot.green { background-color: #10B981; }
+.legend-dot.red { background-color: #EF4444; }
+.legend-dot.yellow { background-color: #F59E0B; }
+.legend-dot.gray-light { background-color: #9CA3AF; }
+
+.legend-text {
+  color: #4b5563;
+}
+
+/* Progress bar widget */
+.progress-bar-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.progress-title-container {
+  margin-bottom: 16px;
+}
+
+.progress-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.progress-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 4px 0 0 0;
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #f3f4f6;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progress-segment {
+  height: 100%;
+}
+
+.progress-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

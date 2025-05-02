@@ -1,0 +1,177 @@
+/* Donut Chart Styles */
+.donut-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.donut-chart {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 16px;
+}
+
+.circular-chart {
+  display: block;
+  margin: 0 auto;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #f3f4f6;
+  stroke-width: 3.8;
+}
+
+.circle-blue {
+  fill: none;
+  stroke: #4F46E5;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.circle-green, .circle-red, .circle-yellow, .circle-gray {
+  fill: none;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.chart-number {
+  font-size: 0.5em;
+  line-height: 1;
+  text-anchor: middle;
+  fill: #111827;
+  font-weight: bold;
+}
+
+.chart-label {
+  font-size: 0.2em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  fill: #6b7280;
+}
+
+.chart-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 100%;
+  font-size: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-dot.blue {
+  background-color: #4F46E5;
+}
+
+.legend-dot.gray {
+  background-color: #E5E7EB;
+}
+
+.legend-dot.green {
+  background-color: #10B981;
+}
+
+.legend-dot.red {
+  background-color: #EF4444;
+}
+
+.legend-dot.yellow {
+  background-color: #F59E0B;
+}
+
+.legend-dot.gray-light {
+  background-color: #9CA3AF;
+}
+
+.legend-text {
+  color: #4b5563;
+}
+
+/* Progress Bar Styles */
+.progress-bar-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.progress-title-container {
+  margin-bottom: 16px;
+}
+
+.progress-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.progress-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 4px 0 0 0;
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #f3f4f6;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progress-segment {
+  height: 100%;
+}
+
+.progress-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Empty Chart Styles */
+.empty-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 24px;
+  text-align: center;
+}
+
+.empty-chart-icon {
+  color: #d1d5db;
+  margin-bottom: 16px;
+}
+
+.empty-chart-message {
+  color: #6b7280;
+  font-size: 14px;
+}
